@@ -1,8 +1,6 @@
-• Token menegment ( AuthService ) ( expire time control via worker).
-• Routing with Auth guards and transition animations.
+• Routing with transition animations.
 • Interceptors.
 • Widget architecture based on router outlets and injection tokens.
-• Simple socket connection management
 • Resolution modifiers for injectors
 • Signal based view
 • Material Components
