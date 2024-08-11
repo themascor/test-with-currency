@@ -1,3 +1,4 @@
+GET NEW API_KAY https://app.exchangerate-api.com/
 • Routing with transition animations.
 • Interceptors.
 • Widget architecture based on router outlets and injection tokens.
