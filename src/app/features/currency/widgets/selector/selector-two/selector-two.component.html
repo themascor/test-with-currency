@@ -1,0 +1,14 @@
+@if ((currencies$ |async); as currencies) {
+  <p class="italic">
+  
+      <mat-icon aria-hidden="false" aria-label="Example home icon" fontIcon="home"></mat-icon>
+ Completely another selector...just to demo different widgets
+    </p>
+  
+<form [formGroup]="fg">
+  <app-currency-input formControlName="firstPicker" [currencies]="currencies">
+  </app-currency-input>
+  <app-currency-input formControlName="secondPicker" [currencies]="currencies" >
+  </app-currency-input>
+</form>
+}@else { Loading... }  

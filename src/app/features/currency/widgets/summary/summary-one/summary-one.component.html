@@ -1,0 +1,22 @@
+@if (data() !== null) {
+<mat-card appearance="outlined" class="text p-2 m-5 w-96">
+  <mat-card-header>
+    <mat-card-title>
+      <p class="text-pink-300">{{ data()?.target_code }}</p>
+    </mat-card-title>
+  </mat-card-header>
+  <mat-card-content>
+    <p class="text-pink-50">{{ data()?.terms_of_use }}</p>
+  </mat-card-content>
+  <mat-card-footer class="pt-3">
+    <mat-chip-set>
+      <mat-chip>{{ data()?.time_last_update_utc| date : "medium" }}</mat-chip>
+      <mat-chip>{{ data()?.conversion_rate }}</mat-chip>
+    </mat-chip-set>
+  </mat-card-footer>
+</mat-card>
+} @else {
+<div class="border w-96 flex justify-center items-center text-gray-300 h-24">
+  <mat-icon>view_agenda</mat-icon>
+</div>
+}

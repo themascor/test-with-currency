@@ -1,0 +1,23 @@
+<div class="block">
+  <mat-chip-set aria-label="Rate">
+    <mat-chip>USD: {{ usd() }} </mat-chip>
+    <mat-chip>EUR: {{ eur() }} </mat-chip>
+  </mat-chip-set>
+    @if (isChartData()) {
+    <canvas
+      baseChart
+      width="1200"
+      height="200"
+      [type]="'bar'"
+      [data]="chartData()"
+      [options]="chartOptions"
+      [legend]="chartLegend"
+    >
+    </canvas>
+    } @else  {
+      <div class="border w-96 h-24 flex justify-center items-center text-gray-300">
+        <mat-icon>query_stats</mat-icon>
+      </div>
+    }
+  </div>
+  
